@@ -1,0 +1,24 @@
+
+/* The element to apply the animations to*/
+img {
+    width: 100px;
+    height: 100px;
+}
+div:hover{
+    width: 100px;
+    height: 100px;
+    background: purple;
+    animation-name: animatedbox;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: rotate(45deg);
+    transform: rotate(90deg);
+    transform: rotate(180deg);
+  
+}
+@keyframes animatedbox {
+    0% {background-color: rgb(0, 0, 255);}
+    25%{background-color: rgb(246, 57, 173);}
+    50%{background-color: rgb(173, 255, 47);}
+    75%{background-color: rgb(255, 0, 0); }
+}
